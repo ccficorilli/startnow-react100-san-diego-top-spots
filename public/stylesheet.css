@@ -1,0 +1,19 @@
+html, body {
+    box-sizing: border-box;
+    height: 100%;
+    background: #ADA996;  /* fallback for old browsers */
+    
+
+}
+.container{
+    padding: 5%;
+}
+
+.App, .posted {
+    border: 2px black solid;
+    border-radius: 6px;
+    padding: 12px;
+    background: whitesmoke;
+    margin: 2%;
+}
+
