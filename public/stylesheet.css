@@ -19,21 +19,23 @@ html, body {
 .posted {
     overflow: hidden;
 }
-.map-canvas {
+iframe {
     border: transparent 2px solid;
     border-radius: 15px;
     padding: 1%;
     margin: auto;
     width: 40%;
-    background-color: tan;
-    text-align: center;
-    transition: 1.3s;
-    align-self: center;
+    background-color: #979797;
+    transition: 1.5s;
 }
-.map-canvas:hover {
+iframe:hover {
     margin: auto;
     width: 80%;
+    height: 80%;
     padding: 10%;
     
     }
+
+.bucket {
+text-align: center;}
 

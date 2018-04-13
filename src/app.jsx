@@ -17,14 +17,16 @@ class App extends Component {
     .then(response => response.data)
     .then(topspots => this.setState({ topspots }));
   }
-  showGmaps() {console.log(this.state.location)
+  showGmaps() {
+              const i = key - 1;
+              console.log(this.props.key);
               return '"' + 'https://www.google.com/maps/embed/v1/place?q=' 
-              + this.state.location[0] + '%2c%20' + this.state.location[1] 
+              + this.state.topspots[i].location[0] + '%2c%20' + this.state.topspots[i].location[1] 
               + '&key=AIzaSyCMVSehMOv4PEXdm7VkncGtCX84wEJId7w' + '"'
               }
                 
   render() {
-    console.log(this.state.topspots)
+ //   console.log(this.state.topspots)
     
     return (
       <div className='container'>
