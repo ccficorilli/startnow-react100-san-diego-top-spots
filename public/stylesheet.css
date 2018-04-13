@@ -10,10 +10,30 @@ html, body {
 }
 
 .App, .posted {
-    border: 2px black solid;
+    border: 2px transparent solid;
     border-radius: 6px;
     padding: 12px;
     background: whitesmoke;
     margin: 2%;
 }
+.posted {
+    overflow: hidden;
+}
+.map-canvas {
+    border: transparent 2px solid;
+    border-radius: 15px;
+    padding: 1%;
+    margin: auto;
+    width: 40%;
+    background-color: tan;
+    text-align: center;
+    transition: 1.3s;
+    align-self: center;
+}
+.map-canvas:hover {
+    margin: auto;
+    width: 80%;
+    padding: 10%;
+    
+    }
 
