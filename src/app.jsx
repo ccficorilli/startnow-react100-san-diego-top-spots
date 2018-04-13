@@ -6,7 +6,7 @@ import TopSpot from './topspot';
 class App extends Component {
   constructor(props) {    
     super(props);
-    this.showGmaps = this.showGmaps.bind(this);
+    // this.showGmaps = this.showGmaps.bind(this);
     this.state = {
       topspots: []
     };
@@ -16,15 +16,17 @@ class App extends Component {
     .get('https://origin-top-spots-api.herokuapp.com/api/topspots')
     .then(response => response.data)
     .then(topspots => this.setState({ topspots }));
+
+    const showGmaps = () => 
+      '"' + 'https://www.google.com/maps/embed/v1/place?q=' 
+      + props.location[0] + '%2c%20' + props.location[1]
+      + '&key=AIzaSyCMVSehMOv4PEXdm7VkncGtCX84wEJId7w' + '"';
+      
+
   }
-  showGmaps() {console.log(this.state.location)
-              return '"' + 'https://www.google.com/maps/embed/v1/place?q=' 
-              + this.state.location[0] + '%2c%20' + this.state.location[1] 
-              + '&key=AIzaSyCMVSehMOv4PEXdm7VkncGtCX84wEJId7w' + '"'
-              }
                 
   render() {
-    console.log(this.state.topspots)
+    // console.log(this.state.topspots)
     
     return (
       <div className='container'>
