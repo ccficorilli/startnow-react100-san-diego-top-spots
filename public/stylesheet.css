@@ -19,25 +19,29 @@ html, body {
 .posted {
     overflow: hidden;
 }
-.map-canvas {
-    border: transparent 2px solid;
+iframe {
+    display: flex;
+    border: none;
     border-radius: 15px;
-    padding: 1%;
     margin: auto;
     width: 40%;
-    background-color: tan;
-    text-align: center;
-    transition: 1.3s;
-    align-self: center;
+    height: 200px;
+    transition: 1s;
 }
-.map-canvas:hover {
+iframe:hover {
     margin: auto;
     width: 80%;
-    padding: 10%;
+    height: 400px;
+   
     
     }
+
 .bucket {
-    margin: auto;
-    text-align: center;
-    
+display: inline-flex;
+width: 100%;
+align-content: center;
+height: 400px;
+margin: auto;
+
 }
+
