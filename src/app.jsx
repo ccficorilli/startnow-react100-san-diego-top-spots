@@ -6,7 +6,6 @@ import TopSpot from './topspot';
 class App extends Component {
   constructor(props) {    
     super(props);
-    this.showGmaps = this.showGmaps.bind(this);
     this.state = {
       topspots: []
     };
@@ -17,18 +16,8 @@ class App extends Component {
     .then(response => response.data)
     .then(topspots => this.setState({ topspots }));
   }
-  showGmaps() {
-              const i = key - 1;
-              console.log(this.props.key);
-              return '"' + 'https://www.google.com/maps/embed/v1/place?q=' 
-              + this.state.topspots[i].location[0] + '%2c%20' + this.state.topspots[i].location[1] 
-              + '&key=AIzaSyCMVSehMOv4PEXdm7VkncGtCX84wEJId7w' + '"'
-              }
-                
-  render() {
- //   console.log(this.state.topspots)
-    
-    return (
+    render() {
+     return (
       <div className='container'>
         <div className='App'>
           <h2>San Diego Top Spots</h2>
