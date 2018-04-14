@@ -32,5 +32,11 @@ iframe:hover {
     }
 
 .bucket {
-text-align: center;}
+    display: flex;
+    width: 100%;
+    align-content: center;
+    height: auto;
+    margin: auto;
+
+}
 

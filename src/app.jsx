@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import TopSpot from './topspot';
 
-
 class App extends Component {
   constructor(props) {    
     super(props);
@@ -16,8 +15,13 @@ class App extends Component {
     .then(response => response.data)
     .then(topspots => this.setState({ topspots }));
   }
+<<<<<<< HEAD
     render() {
      return (
+=======
+  render() {
+    return (
+>>>>>>> 5f6737f57ae786ee43a9b79da564f008e7bfecf4
       <div className='container'>
         <div className='App'>
           <h2>San Diego Top Spots</h2>
