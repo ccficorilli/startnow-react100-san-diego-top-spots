@@ -16,22 +16,25 @@ html, body {
     background: whitesmoke;
     margin: 2%;
 }
-.posted {
-    overflow: hidden;
-}
+
 iframe {
-    display: flex;
     border: none;
+    display: flex;
     border-radius: 15px;
     margin: auto;
-    width: 40%;
-    height: 200px;
+    width: 200px;
+    height: 100px;
     transition: 1s;
 }
 iframe:hover {
+<<<<<<< HEAD
     margin: auto;
     width: 80%;
     height: 400px;    
+=======
+    width: 40vmax;
+    height: 20vmax;
+>>>>>>> 6b1ce8c009f55247dde649ea750bb4e21b70d0d2
     }
 
 .bucket {
